@@ -164,14 +164,33 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background:var(--bg-translucent)  ;
+  background: var(--bg-translucent);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
 }
 
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
 
+.logo {
+  text-decoration: none;
+}
 
-
+.logo-mark {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  padding: 0.35rem 0.6rem;
+  color: var(--text);
+}
+/* .mobile-nav {
+  display: none;
+} */
 
 .nav-toggle {
   display: none;
