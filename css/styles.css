@@ -270,7 +270,31 @@ header {
     opacity 0.25s var(--ease);
 }
 
+/* button */
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-self: center;
+  padding: .8rem 1.4rem;
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* hero */
+
+
+
 
 @media (max-width: 795px) {
   .nav-toggle {
@@ -292,15 +316,12 @@ header {
     transition: all 0.4s var(--ease);
   }
 
-  .open-menu{
-       clip-path: circle(144% at 100% 0%);
+  .open-menu {
+    clip-path: circle(144% at 100% 0%);
   }
 
-  .nav-links  a{
+  .nav-links a {
     display: block;
     padding: var(--space-2);
   }
-
-
-  
 }
