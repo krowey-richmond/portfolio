@@ -16,41 +16,46 @@
   --radius-sm: 3px;
   --radius-md: 8px;
 
-  --font-sm: 0.875rem;
-  --font-bd: 1rem;
-  --font-sec: 2rem;
-  --font-hero: 3rem;
+  --fs-xsm: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-1: 1rem;
+  --fs-2: 2rem;
+  --fs-3: 3rem;
 
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
 
   /* dark theme (default) */
   --bg: #08120c;
-  --surface: #0d1b13;
-  --card: #132118;
-
-  --text-primary: #f8fafc;
-  --text-secondary: #cbd5e1;
-
-  --border: #1f3527;
+  --bg-elevated: #0f1c14;
+  --text: #f1f5f1;
+  --text-muted: #9fb1a5;
 
   --accent: #84cc16;
-  --accent-hover: #a3e635;
-  --accent-light: #def4b5;
+  --accent-ink: #08120c;
+
+  --accent-soft: rgba(130, 203, 21, 0.12);
+
+  --line: rgba(241, 245, 241, 0.12);
+  --line-strong: rgba(241, 245, 241, 0.28);
+
+  --bg-translucent: rgba(8, 18, 12, 0.82);
 }
 
 [data-theme="light"] {
-  --bg: #ffffff;
-  --surface: #f8fafc;
-  --card: #ffffff;
+  --bg: #fafaf7;
+  --bg-elevated: #f4f5f1;
+  --text: #16222e;
+  --text-muted: #5c6b79;
 
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
+  --accent: #65a30d;
+  --accent-ink: #fafaf7;
 
-  --border: #e2e8f0;
+  --accent-soft: rgba(101, 163, 13, 0.08);
 
-  --accent: #84cc16;
-  --accent-hover: #65a30d;
-  --accent-light: #def4b5;
+  --line: rgba(22, 34, 46, 0.14);
+  --line-strong: rgba(22, 34, 46, 0.34);
+
+  --bg-translucent: rgba(250, 250, 247, 0.82);
 }
 
 /* DEFAULTS */
@@ -84,7 +89,7 @@ body {
   margin: 0;
   font-family: var(--font-body);
   background: var(--bg);
-  color: var(--text-primary);
+  color: var(--text);
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -122,11 +127,11 @@ ul {
   top: 0;
   left: -9999px;
   background: var(--accent);
-  color: var(--accent-light);
+  color: var(--accent-ink);
   padding: 0.75rem 1.25rem;
   z-index: 200;
   font-family: var(--font-mono);
-  font-size: var(--font-sm);
+  font-size: var(--fs-sm);
 }
 
 .skip-link:focus {
@@ -138,19 +143,38 @@ ul {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xsm);
+  color: var(--accent);
+}
 .header-inner,
 .section-inner,
 .footer-inner {
   width: 100%;
   max-width: var(--content-width);
+  margin: 0 auto;
+  padding-inline: var(--space-3);
 }
 
 /* header */
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background:var(--bg-translucent)  ;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+
+
 
 
 .nav-toggle {
-display: none;
+  display: none;
   width: 38px;
   height: 38px;
   background: none;
