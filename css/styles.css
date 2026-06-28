@@ -663,35 +663,41 @@ header {
 
 /* contact */
 
-.contact-section{
+.contact-section {
 	text-align: center;
 }
-.contact-copy{
+.contact-copy {
 	color: var(--text-muted);
 	max-width: 48ch;
 	margin-inline: auto;
 }
-.contact-actions{
+.contact-actions {
 	display: flex;
 	gap: var(--space-2);
 	justify-content: center;
 	margin: var(--space-3) 0;
 	flex-wrap: wrap;
 }
-.social-list{
+.social-list {
 	display: flex;
 	gap: var(--space-3);
 	justify-content: center;
 	margin-top: var(--space-4);
 }
-.social-list a{
-font-size: clamp(1rem, 0.9167rem + 0.4167vw, 1.25rem);
-color: var(--text);
-transition: color .3s var(ease);
+.social-list a i {
+	font-size: clamp(1rem, 0.9167rem + 0.4167vw, 1.25rem);
+	color: var(--text);
+	transition:
+		color 0.3s var(--ease),
+		scale 0.3s var(--ease);
 }
-.social-list a:hover{
+.social-list a i:hover {
 	color: var(--accent);
+	transform: scale(1.25);
 }
+
+/* footer */
+
 /* responsiveness */
 
 @media (max-width: 795px) {
