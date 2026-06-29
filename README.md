@@ -138,9 +138,9 @@ Contributions, suggestions, and feedback are welcome.
 
 ## 📬 Contact
 
-[![GitHub](https://img.shields.io/badge/GitHub-kroweyrichmond-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/krowey-richmond)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-kroweyrichmond-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/krowey-richmond)
-[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:kroweyrichmond2004@email.com)
+### [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/krowey-richmond)
+### [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/krowey-richmond)
+### [![Email](https://img.shields.io/badge/Email-red?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:kroweyrichmond2004@email.com)
 
 ---
 
