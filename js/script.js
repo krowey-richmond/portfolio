@@ -79,6 +79,7 @@ const root = document.documentElement;
 const themeToggle = document.getElementById("theme-toggle");
 const THEME_KEY = "portfolio-theme";
 
+// APPLY THEME
 function applyTheme(theme) {
 	root.setAttribute("data-theme", theme);
 
@@ -92,7 +93,7 @@ function applyTheme(theme) {
 		isLight ? "Switch to dark mode" : "Switch to light mode",
 	);
 }
-
+// get saved theme from localStorage
 const savedTheme = localStorage.getItem(THEME_KEY);
 
 if (savedTheme) {
@@ -118,4 +119,3 @@ if (themeToggle) {
 // get year
 var yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
-
