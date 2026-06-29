@@ -11,22 +11,42 @@ const prefersReducedMotion = window.matchMedia(
 // mobile nav open/close
 navToggle.addEventListener("click", () => {
 	navMenu.classList.toggle("open-menu");
+	navToggle.classList.toggle("active");
+	updateNavAria();
 });
+
+function closeMenu() {
+	navMenu.classList.remove("open-menu");
+	navToggle.classList.remove("active");
+	updateNavAria();
+}
+
+function updateNavAria() {
+	if (!navToggle) return;
+
+	const isOpen = navMenu.classList.contains("open-menu");
+
+	navToggle.setAttribute("aria-expanded", String(isOpen));
+	navToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+}
+updateNavAria();
 
 navItems.forEach((item) => {
 	item.addEventListener("click", () => {
-		navMenu.classList.remove("open-menu");
+		closeMenu();
 	});
 });
 
 document.addEventListener("click", (event) => {
+	if (!navMenu || !navToggle) return;
+
 	if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
-		navMenu.classList.remove("open-menu");
+		closeMenu();
 	}
 });
 
 window.addEventListener("scroll", () => {
-	navMenu.classList.remove("open-menu");
+	closeMenu();
 });
 
 function updateNavLabel() {
@@ -37,7 +57,10 @@ function updateNavLabel() {
 			: "Main Navigation, Desktop",
 	);
 }
-mobileQuery.addListener(updateNavLabel);
+mobileQuery.addEventListener("change", () => {
+	updateNavLabel;
+	closeMenu();
+});
 updateNavLabel();
 
 //theme toggle
