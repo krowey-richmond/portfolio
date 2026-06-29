@@ -1,11 +1,9 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-links");
-const mainNav = document.querySelector(".main-nav");
 const navItems = document.querySelectorAll(".nav-links a");
-
+const mainNav = document.querySelector(".main-nav");
 const mobileQuery = window.matchMedia("(max-width: 768px)");
 
-// guard helpers
 const exists = (el) => el !== null;
 
 function updateNavAria() {
@@ -64,7 +62,7 @@ function updateNavLabel() {
 }
 
 mobileQuery.addEventListener("change", () => {
-	updateNavLabel(); // FIXED
+	updateNavLabel();
 	closeMenu();
 });
 
