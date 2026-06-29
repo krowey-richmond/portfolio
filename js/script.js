@@ -110,8 +110,8 @@ if (themeToggle) {
 		const currentTheme = root.getAttribute("data-theme");
 		const nextTheme = currentTheme === "light" ? "dark" : "light";
 
-		applyTheme(next);
-		localStorage.setItem(THEME_KEY, next);
+		applyTheme(nextTheme);
+		localStorage.setItem(THEME_KEY, nextTheme);
 	});
 }
 
