@@ -3,8 +3,7 @@ export const projects = [
 		label: 1,
 		title: "Grocery Shop",
 		image: "./assets/images/grocery.webp",
-		description:
-			"A responsive grocery e-commerce landing page built with HTML, CSS, and JavaScript",
+		description: "A responsive grocery e-commerce landing page",
 		tech: ["HTML", "CSS", "JavaScript"],
 		live: "https://grocery-shop-krb.vercel.app/",
 		code: "https://github.com/krowey-richmond/grocery-shop",
