@@ -9,11 +9,12 @@ projects.forEach((project) => {
 	card.innerHTML = `
         <div class="project-frame">
             <div class="project-image">
+                <a href="${project.live}" target="_blank" rel="noopener">
                 <img
                     src="${project.image}"
                     alt="${project.title}"
                     loading="lazy"
-                />
+                /></a>
             </div>
         </div>
 

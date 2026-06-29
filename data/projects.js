@@ -12,7 +12,7 @@ export const projects = [
 	{
 		label: 2,
 		title: "Portfolio",
-		image: "./assets/images/portfolio.webp",
+		image: "./assets/images/grocery.webp",
 		description: "My portfolio",
 		tech: ["HTML", "CSS"],
 		live: "#",
@@ -21,7 +21,7 @@ export const projects = [
 	{
 		label: 3,
 		title: "Portfolio",
-		image: "./assets/images/portfolio.webp",
+		image: "./assets/images/grocery.webp",
 		description: "My portfolio",
 		tech: ["HTML", "CSS"],
 		live: "#",
