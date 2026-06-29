@@ -4,7 +4,6 @@ const navItems = document.querySelectorAll(".nav-links a");
 const mainNav = document.querySelector(".main-nav");
 const mobileQuery = window.matchMedia("(max-width: 768px)");
 
-const exists = (el) => el !== null;
 
 function updateNavAria() {
 	if (!navToggle || !navMenu) return;
@@ -33,9 +32,11 @@ if (navToggle && navMenu) {
 }
 
 // NAV ITEM CLICK
-navItems.forEach((item) => {
-	item.addEventListener("click", closeMenu);
-});
+if (navItems.length) {
+	navItems.forEach((item) => {
+		item.addEventListener("click", closeMenu);
+	});
+}
 
 // OUTSIDE CLICK
 document.addEventListener("click", (event) => {
