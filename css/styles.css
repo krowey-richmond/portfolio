@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
-
 :root {
 	--font-display: "Space Grotesk", sans-serif;
 	--font-body: "Inter", sans-serif;
@@ -36,7 +34,7 @@
 	/* Accent */
 	--accent: #7abf1a;
 	--accent-ink: #111417;
-	--accent-soft: rgba(163, 230, 53, 0.12);
+	--accent-hover: #166534;
 
 	--line: rgba(245, 247, 245, 0.1);
 	--line-strong: rgba(245, 247, 245, 0.22);
@@ -56,7 +54,7 @@
 	--accent-hover: #166534;
 	--accent-ink: #ffffff;
 
-	--accent-soft: rgba(21, 128, 61, 0.12);
+
 
 	/* stronger borders for clarity */
 	--line: rgba(15, 23, 42, 0.12);
@@ -273,7 +271,6 @@ header {
 .btn {
 	display: inline-flex;
 	align-items: center;
-	justify-self: center;
 	padding: 0.8em 1.4em;
 	font-family: var(--font-mono);
 	font-size: var(--fs-sm);
@@ -298,7 +295,7 @@ header {
 }
 
 .btn-primary:hover {
-	opacity: 0.9;
+	background: var(--accent-hover);
 }
 
 .btn-ghost {
@@ -740,13 +737,11 @@ header {
 			transform 0.35s var(--ease),
 			opacity 0.25s var(--ease);
 		pointer-events: none;
-	
 	}
 	.nav-links.open-menu {
 		transform: scaleY(1);
 		opacity: 1;
 		pointer-events: auto;
-
 	}
 	/* .nav-links {
 		position: absolute;

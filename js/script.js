@@ -47,7 +47,7 @@ document.addEventListener("click", (event) => {
 });
 
 // SCROLL CLOSE
-window.addEventListener("scroll", closeMenu);
+// window.addEventListener("scroll", closeMenu);
 
 // NAV LABEL
 function updateNavLabel() {
