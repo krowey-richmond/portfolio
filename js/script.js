@@ -4,7 +4,6 @@ const navItems = document.querySelectorAll(".nav-links a");
 const mainNav = document.querySelector(".main-nav");
 const mobileQuery = window.matchMedia("(max-width: 768px)");
 
-
 function updateNavAria() {
 	if (!navToggle || !navMenu) return;
 
@@ -31,6 +30,12 @@ if (navToggle && navMenu) {
 	});
 }
 
+navToggle.addEventListener("keydown", (e) => {
+	if (e.key === "Enter" || e.key === " ") {
+		e.preventDefault();
+		navToggle.click();
+	}
+});
 // NAV ITEM CLICK
 if (navItems.length) {
 	navItems.forEach((item) => {
@@ -102,7 +107,8 @@ if (savedTheme) {
 
 if (themeToggle) {
 	themeToggle.addEventListener("click", () => {
-		const next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
+		const currentTheme = root.getAttribute("data-theme");
+		const nextTheme = currentTheme === "light" ? "dark" : "light";
 
 		applyTheme(next);
 		localStorage.setItem(THEME_KEY, next);
