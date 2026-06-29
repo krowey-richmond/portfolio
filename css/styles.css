@@ -549,17 +549,26 @@ header {
 
 .project-frame {
 	position: relative;
-	aspect-ratio: 16/10;
-	background:
-		linear-gradient(var(--line) 1px, transparent 1px) 0 0/24px 24px,
-		linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0/24px 24px,
-		var(--bg-elevated);
-	display: grid;
-	place-items: center;
-	color: var(--text-muted);
+	aspect-ratio: 16 / 10;
+	overflow: hidden;
 	border-bottom: 1px solid var(--line);
+	background: var(--bg-elevated);
+}
+.project-image {
+	width: 100%;
+	height: 100%;
 }
 
+.project-image img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	transition: transform 0.35s var(--ease);
+}
+.project-card:hover .project-image img {
+	transform: scale(1.05);
+}
 .project-body {
 	padding: var(--space-3);
 }
