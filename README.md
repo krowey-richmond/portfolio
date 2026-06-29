@@ -110,7 +110,7 @@ Open `index.html` in your browser or use a Live Server extension.
 
 ## 📸 Screenshots
 
-Check the folder for screenshots.
+Check the [folder](https://github.com/krowey-richmond/portfolio/tree/main/assets/screenshots) for screenshots.
 
 ## 🎯 Future Improvements
 
@@ -138,8 +138,8 @@ Contributions, suggestions, and feedback are welcome.
 
 ## 📬 Contact
 
-[![GitHub](https://img.shields.io/badge/GitHub-kroweyrichmond-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kroweyrichmond)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-kroweyrichmond-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/kroweyrichmond)
+[![GitHub](https://img.shields.io/badge/GitHub-kroweyrichmond-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/krowey-richmond)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-kroweyrichmond-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/krowey-richmond)
 [![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:kroweyrichmond2004@email.com)
 
 ---
