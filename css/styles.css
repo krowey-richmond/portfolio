@@ -49,7 +49,7 @@
 
 	/* improved contrast text */
 	--text: #0f172a;
-	--text-muted: #475569;
+	--text-muted: #3e4b5d;
 
 	/* stronger accessible green */
 	--accent: #15803d;
@@ -155,9 +155,6 @@ ul {
 	color: var(--accent);
 	letter-spacing: 0.12em;
 	margin: 0 0 var(--space-1);
-}
-
-.eyebrow {
 	animation: none;
 }
 
@@ -743,13 +740,13 @@ header {
 			transform 0.35s var(--ease),
 			opacity 0.25s var(--ease);
 		pointer-events: none;
-		visibility: hidden;
+	
 	}
 	.nav-links.open-menu {
 		transform: scaleY(1);
 		opacity: 1;
 		pointer-events: auto;
-		visibility: visible;
+
 	}
 	/* .nav-links {
 		position: absolute;
